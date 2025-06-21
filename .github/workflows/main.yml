@@ -24,7 +24,10 @@ jobs:
              username: ${{ secrets.CLOUD_USER }}
              password: ${{ secrets.CLOUD_SSH }}
              port: 22
-             script: whoami
+             script: |
+                pwd
+                ls-l
+                mkdir praveen k
 
 
       
