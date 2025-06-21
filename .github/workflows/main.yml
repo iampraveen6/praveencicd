@@ -15,7 +15,7 @@ jobs:
 
 
          - name: Show all files
-           run: ls -al
+           run: ls -ls
 
      
         
