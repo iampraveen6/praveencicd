@@ -4,19 +4,19 @@ name: Deploy HTML to Cloud
 on:
    push:
       branches:
-        - main    
+         - main    
 
 job:
-  deploy:
-    runs-on: ubunto-latest
+   deploy:
+   runs-on: ubunto-latest
 
-    steps:
-    - name: CHeckout code
-      uses: actions/checkout@v4
+steps:
+   - name: CHeckout code
+     uses: actions/checkout@v4
 
 
-    - name: Show all files
-      uses: ls -al
+   - name: Show all files
+     uses: ls -al
 
      
         
