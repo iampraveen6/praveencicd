@@ -8,15 +8,14 @@ on:
 
 jobs:
    deploy:
-   runs-on: ubunto-latest
+      runs-on: ubunto-latest
+      steps:
+         - name: CHeckout code
+           uses: actions/checkout@v4
 
-steps:
-   - name: CHeckout code
-     uses: actions/checkout@v4
 
-
-   - name: Show all files
-     uses: ls -al
+         - name: Show all files
+           run: ls -al
 
      
         
