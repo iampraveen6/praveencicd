@@ -17,6 +17,18 @@ jobs:
          - name: Show all files
            run: ls -ls
 
+         - name: SSH to CLoud Server
+           uses: appleboy/ssh-action@v1
+           with:
+             host: ${{ secrets.HOST }}
+             username: ${{ secrets.CLOUD_USER }}
+             password: ${{ secrets.CLOUD_SSH }}
+             port: 22
+             script: whoami
+
+
+      
+
      
         
 
